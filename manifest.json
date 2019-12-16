@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+
+    "name": "Alma Homegrown UI Enchancements",
+    "version": "0.1.0",
+    "description": "A series of unnoficial UI enchancements for the Alma Platform",
+    "icons": {
+        "16": "images/icon_16.png",
+        "32": "images/icon_32.png",
+        "64": "images/icon_64.png",
+        "128": "images/icon_128.png",
+        "256": "images/icon_256.png"
+    },
+    "content_scripts": [{
+        "run_at": "document_end",
+        "matches": [
+            "https://*.alma.exlibrisgroup.com/mng/action/home.do*"
+        ],
+        "js": ["content_scripts/observerMap.js",
+            "content_scripts/alma.js",
+            "content_scripts/emojis.js",
+            "content_scripts/parse.js"
+        ]
+    }],
+    "options_ui": {
+        "page": "html/options.html",
+        "chrome_style": false
+    },
+    "background": {
+        "scripts": ["content_scripts/observerMap.js", "background.js"]
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "bookmarks",
+        "https://*.alma.exlibrisgroup.com/mng/action/home.do*",
+        "downloads",
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "web_accessible_resources": [
+        "images/icon_256.png",
+        "images/routing_alert.png"
+    ],
+    "content_security_policy": "script-src 'self' chrome-extension://*.html https://google.com; object-src 'self'"
+}
