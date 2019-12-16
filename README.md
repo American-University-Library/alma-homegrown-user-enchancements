@@ -5,7 +5,7 @@ Alma HUE is a Chrome Extention that tweaks elements of the [Alma](https://www.ex
 
 This alters the appearance of routing pop-up alerts triggered from the Return Item screen. It changes the header color and adds an image. This helps distinguish routing notes from others which might require less immediate staff actions.
 
-![Note](https://raw.githubusercontent.com/American-University-Library/alma-homegrown-user-enchancements/master/images/routing_note.png?raw=true)
+![Note](images/routing_note.png)
 
 ### Markdown Lite
 
@@ -23,8 +23,8 @@ Use a modified version of markdown in Alma notes and the extention will process 
 
 You can use any HTML compliant color syntax inside the parenthesis when changing color like `blue`, `#0000FF`, or `rgb(0,0,255)`.
 
-![Note](https://raw.githubusercontent.com/American-University-Library/alma-homegrown-user-enchancements/master/images/markdown_lite_note.png?raw=true)
-![Output](https://raw.githubusercontent.com/American-University-Library/alma-homegrown-user-enchancements/master/images/markdown_lite.png?raw=true)
+![Note](images/markdown_lite_note.png)
+![Output](images/markdown_lite.png)
 
 ## Getting Started Using the App
 
